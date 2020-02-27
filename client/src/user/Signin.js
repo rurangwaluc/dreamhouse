@@ -43,15 +43,15 @@ const Signin = () => {
     const signUpForm = () => (
 
        <div id='cont' className="container  bg-light  p-1">
-
-        <div  className="rows  d-flex">
-
-          <div className="col-md-8 m-auto col-sm-12 text-center">
-            <div className="text-secondary text-center mt-3">
+ <div className="text-secondary text-center mt-5 mb-1">
               <p className="lead h2">
                 <i className="fas fa-user"></i> Login 
           </p>
             </div>
+        <div  className="rows  d-flex">
+
+          <div className="col-md-8 m-auto col-sm-12 text-center">
+           
             <form id='form' className="form ">
               <div className="form-group  ">
                 <input
