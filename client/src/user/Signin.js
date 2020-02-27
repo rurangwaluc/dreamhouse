@@ -10,7 +10,7 @@ import Menu from '../core/Menu'
 const Signin = () => {
     const [values, setValues] = useState({
         email: "",
-        password: "",
+        password: " ",
         error: "",
         loading: false,
         redirectToReferrer: false
