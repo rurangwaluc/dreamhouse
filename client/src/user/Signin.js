@@ -9,8 +9,8 @@ import Menu from '../core/Menu'
 
 const Signin = () => {
     const [values, setValues] = useState({
-        email: "luc@gmail.com",
-        password: "123456",
+        email: "",
+        password: "",
         error: "",
         loading: false,
         redirectToReferrer: false

@@ -13,11 +13,7 @@ const AdminDashboard = () => {
             <div className="mt-5">
 
                 <ul className="list-group">
-                    <li className="list-group-item text-info">
-                        <Link className="nav-link " to="/create/status">
-                            Add Status
-                        </Link>
-                    </li>
+                   
                     <li className="list-group-item text-info">
                         <Link className="nav-link " to="/create/property">
                             Add Property
