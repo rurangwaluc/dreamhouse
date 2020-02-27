@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://rurangwa:rurangwa@ecommerce-sf8rj.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "masecret",
+  "githubClientId": "94fc7183fd5ffd1ca7c0",
+  "githubSecret": "74fd777e0bb346cde00e05d99e1978bd882bd158"
+}
