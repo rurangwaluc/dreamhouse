@@ -72,7 +72,7 @@ const Signup = () => {
                 <button  onClick={clickSubmit} type="submit" className="btn">Register</button>
               </div>
               <div className="form-group">
-               <Link to="/signin" className="new-signup">Not a member yet? Create account</Link>
+               <Link to="/signin" className="new-signup">Already Have Account? Login</Link>
               </div>
             </form>
           </div>
