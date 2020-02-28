@@ -14,7 +14,7 @@ const isActive = (history, path) => {
 const Menu = ({ history }) => (
     <nav  className="navbar navbar-expand-lg navbar-light bg-dark ">
         <h1 id="h1">
-            <Link className="text-light" to="/">
+            <Link className="text-light text-decoration-none" to="/">
                 DreamHome
         </Link>
         </h1>
