@@ -19,9 +19,6 @@ const AboutPage = () => {
             <img src={img} alt="Ima" className=" rounded" />
           </div>
           <div className="col-md-5 ml-auto" >
-
-
-
             <p className="lead">Illum repudiandae ratione facere explicabo. Consequatur dolor optio iusto, quos autem voluptate ea? Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis!</p>
            
           </div>

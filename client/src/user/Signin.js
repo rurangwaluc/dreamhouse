@@ -41,50 +41,40 @@ const Signin = () => {
     };
 
     const signUpForm = () => (
-
-       <div id='cont' className="container  bg-light  p-1">
- <div className="text-secondary text-center mt-5 mb-1">
-              <p className="lead h2">
-                <i className="fas fa-user"></i> Login 
-          </p>
-            </div>
-        <div  className="rows  d-flex">
-
-          <div className="col-md-8 m-auto col-sm-12 text-center">
-           
-            <form id='form' className="form ">
-              <div className="form-group  ">
-                <input
-                  className="rounded   p-2"
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  value={email}
+ <div className="login-signup">
+    
+    <div className="container m">
+      <div className="row">
+        <div className="col-12">
+          <div className="rec-shap">
+            <form>
+              <h5 className="login-txt">Login</h5>
+              <div className="form-group">
+                <label for="InputEmail">Email address</label>
+                <input type="email" className="form-control rounded " id="InputEmail"  value={email}
                    onChange={handleChange("email")}
                 />
               </div>
               <div className="form-group">
-                <input
-                  className="rounded p-2"
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={password}
+                <label for="InputPassword">Password</label>
+                <input type="password" className="form-control rounded" id="InputPassword"value={password}
                    onChange={handleChange("password")}
                   minLength="6"
                 />
               </div>
-              <input 
-               onClick={clickSubmit}
-              type="submit" className="btn btn-success btn-block w-75  h3" value="Login" />
-              <p className="my-1 m-auto">
-                Don't have an account? <Link to="/signup">Sign Up</Link>
-              </p>
+              
+              <div className="form-group">
+                <button  onClick={clickSubmit} type="submit" className="btn">Login</button>
+              </div>
+              <div className="form-group">
+               <Link to="/signup" className="new-signup text-decoration-none text-secondary">Not a member yet? Create account</Link>
+              </div>
             </form>
           </div>
-          
         </div>
       </div>
+    </div>
+  </div>
     );
 
     const showError = () => (

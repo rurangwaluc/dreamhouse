@@ -40,68 +40,46 @@ const Signup = () => {
     };
 
     const signUpForm = () => (
-      <div id='cont' className="container  bg-light  p-1 ">
-        <div className=" text-center">
-          
-          <p className="lead text-secondary mt-5">
-            <i className="fas fa-user"></i>{' '}
-            Create An Account</p>
-        </div>
-        <div className="rows  d-flex">
-          <div className="col-md-8 m-auto col-sm-12 text-center">
-            <form className="form ">
-              <div className="form-group rounded">
-                <input
-                  className="rounded "
-                  type="text"
-                  placeholder="Name"
-                  name="name"
-                  value={name}
+     <div className="login-signup">
+    
+    <div className="container m">
+      <div className="row">
+        <div className="col-12">
+          <div className="rec-shap">
+            <form>
+              <h5 className="login-txt">Register</h5>
+              <div className="form-group">
+                <label for="InputEmail">Name</label>
+                <input type="email" className="form-control rounded" id="InputEmail" value={name}
                   onChange={handleChange('name')}
-                // required
-                />
-
-              </div>
-              <div className="form-group">
-                <input
-                  className="rounded "
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  value={email}
-                   onChange={handleChange('email')}
-                // required
                 />
               </div>
-
               <div className="form-group">
-                <input
-                  className="rounded "
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={password}
-                   onChange={handleChange('password')}
-                // minLength='6'
+                <label for="InputEmail">Email address</label>
+                <input type="email" className="form-control rounded" id="InputEmail"  value={email}
+                   onChange={handleChange("email")}
                 />
-             
+              </div>
+              <div className="form-group">
+                <label for="InputPassword">Password</label>
+                <input type="password" className="form-control rounded" id="InputPassword"value={password}
+                   onChange={handleChange("password")}
+                  minLength="6"
+                />
+              </div>
               
+              <div className="form-group">
+                <button  onClick={clickSubmit} type="submit" className="btn">Register</button>
               </div>
-              <input
-              onClick={clickSubmit}
-                type="submit"
-                className="btn btn-success btn-block w-75  h3"
-                value="Register"
-              />
-              <p className="my-1">
-                Already have an account? <Link to="/signin">Sign In</Link>
-              </p>
+              <div className="form-group">
+               <Link to="/signin" className="new-signup">Not a member yet? Create account</Link>
+              </div>
             </form>
           </div>
-
-          
         </div>
       </div>
+    </div>
+  </div>
     );
 
     const showError = () => (
