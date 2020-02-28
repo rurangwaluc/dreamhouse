@@ -16,7 +16,7 @@ const Home = ({ isAuthenticated }) => {
       <div className="dark-overlay">
         <div className="landing-inner">
           <p id='home-p' className=" x-large w-75">
-            Do Not Hasitate, You May Find Your Dream House.
+           The Best Way To Find Your Home
           </p>
           <div className="buttons mt-5">
             <Link to="/properties" id='home-b' className="btn btn-success p-3 lead">
