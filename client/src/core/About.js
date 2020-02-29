@@ -12,7 +12,7 @@ const AboutPage = () => {
           <div className="col-md-12 mt-3 ">
             <h1 id='about-h' className="display-5 text-center mb-5">It's our pleasure to serve you!</h1>
 
-            <h2 className="text-center mb-3 mt-3">Our Company</h2>
+            <h2 className="text-center mb-2">Our Company</h2>
           </div>
 
           <div class="col-md-6 mb-3" >
